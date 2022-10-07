@@ -1,0 +1,2 @@
+# Opintopiste-laskuri
+wilman opintopistelaskuri
