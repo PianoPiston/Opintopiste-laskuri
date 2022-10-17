@@ -11,5 +11,5 @@ kopioi... kopioi... kopioi...
 vedä vielä alemmas kunnes tulet loppuun.
 <img src="https://i.imgur.com/4i2CRbe.png" height="80%" width="80%" >
 
-liitä kopioitu opintopisteet op.txt tiedostoon, ja tupla-klikkaa opcalc.exe tiedostoa.
+liitä kopioitu opintopisteet op.txt tiedostoon, ja tupla-klikkaa opcalc-v1.exe tiedostoa.
 
