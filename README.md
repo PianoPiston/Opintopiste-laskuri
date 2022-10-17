@@ -25,6 +25,7 @@ liitä kopioitu opintopisteet op.txt tiedostoon joka on unzippattun tiedoston si
 
 
 #issues and faq:
+
 1.
 due to the unknown nature of pyinstaller, its commonly known to raise false positives on antivirus software, if you are concerned about downloading the exe file,
 compile the cli version (use vscode) from source.
