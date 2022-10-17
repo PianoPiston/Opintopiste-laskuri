@@ -2,14 +2,14 @@
 wilman opintopistelaskuri, tämä ohjelma laskee opintopisteesi automaattisesti kurssitarjottimen avulla.
 https://yvkoulut.inschool.fi/trays
 
-#info:
+**info**:
 tämä ei ole vielä valmis, mutta se toimii. Tässä projektissa on kolme ohjelmaa:
 
 opcalc.zip -  normaalin käytön ladattava tiedosto (käytä windowsilla)
 opcalc-en.py -  command-line interface python ohjelma (älä lataa, paitsi jos oot linuxil tai osaat vscodia)
 opcalcgui-v1.py - opcalc.zip:in source tiedosto, tätä tiedostoa muutin pyinstallerin apuna exe tiedostoon, joka on zip:in sisällä.(älä lataa)
 
-#käyttö
+**käyttö**
 
 lataa ja unzippaa opcalc.zip, sitten 
 kopio kaikki opintopisteesi:
@@ -24,7 +24,7 @@ liitä kopioitu opintopisteet op.txt tiedostoon joka on unzippattun tiedoston si
 
 
 
-#issues and faq:
+**issues and faq:**
 
 1.
 due to the unknown nature of pyinstaller, its commonly known to raise false positives on antivirus software, if you are concerned about downloading the exe file,
