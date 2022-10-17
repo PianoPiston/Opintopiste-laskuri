@@ -2,6 +2,8 @@
 wilman opintopistelaskuri, tämä ohjelma laskee opintopisteesi automaattisesti kurssitarjottimen avulla.
 https://yvkoulut.inschool.fi/trays
 
+# problem: not working now, I fix tomorrow.
+
 **info**:
 
 Tässä projektissa on kolme ohjelmaa:
