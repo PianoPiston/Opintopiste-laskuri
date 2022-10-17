@@ -25,6 +25,9 @@ vedä vielä alemmas kunnes tulet loppuun.
 
 liitä kopioitu opintopisteet op.txt tiedostoon joka on unzippattun tiedoston sisällä, ja tupla-klikkaa opcalc-v1.exe tiedostoa.
 
+<img src="https://i.imgur.com/N12QoDw.png" height="80%" width="80%" >
+
+
 
 
 **issues and faq:**
