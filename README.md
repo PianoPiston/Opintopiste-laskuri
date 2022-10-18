@@ -2,8 +2,6 @@
 wilman opintopistelaskuri, tämä ohjelma laskee opintopisteesi automaattisesti kurssitarjottimen avulla.
 https://yvkoulut.inschool.fi/trays
 
-# problem: not working now, I fix tomorrow.
-
 **info**:
 
 Tässä projektissa on kolme ohjelmaa:
@@ -43,4 +41,4 @@ due to the unknown nature of pyinstaller, its commonly known to raise false posi
 compile the cli version (use vscode) from source.
 
 2.
-wilma doesnt have an API i can use to get the data, it would be nice if someone could make a webscraper for this.
+wilma doesnt have an API i can use to get the data, in the future im planning on adding a webscraper with the collaboration of others
