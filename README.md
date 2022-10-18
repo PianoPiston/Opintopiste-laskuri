@@ -25,11 +25,15 @@ kopioi... kopioi... kopioi...
 vedä vielä alemmas kunnes tulet loppuun.
 <img src="https://i.imgur.com/4i2CRbe.png" height="80%" width="80%" >
 
-liitä kopioitu opintopisteet op.txt tiedostoon joka on unzippattun tiedoston sisällä, ja tupla-klikkaa opcalc-v1.exe tiedostoa.
+liitä kopioitu opintopisteet op.txt tiedostoon joka on unzippattun tiedoston sisällä, ja tupla-klikkaa opcalc-vx,x.exe tiedostoa. (x,x = versio)
 
-<img src="https://i.imgur.com/N12QoDw.png" height="80%" width="80%" >
+esimerkki:
 
+<img src="https://i.imgur.com/JYssfv3.png" height="80%" width="80%" >
 
+saa tuloksen:
+
+<img src="https://i.imgur.com/DeQ4R7j.png" height="80%" width="80%" >
 
 
 **issues and faq:**
