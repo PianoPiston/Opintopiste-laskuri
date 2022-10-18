@@ -66,14 +66,25 @@ while True:
                     subjects2 = []
                     subnpoints = {}
 
+                    print(subjects)
                     for sub in subjects:
+                        
                         if sub[-1] == ")":
+                            sub2 = sub[:-6]
                             num = sub[-5:]
-                            sub = sub[:-5]
                             point = num[1]
-                            subnpoints[sub] = point
+                            if sub2 in subnpoints:
+                                print("CUSTOM SUB: "+sub+" HAS ALREADY BEEN ACCOUNTED FOR")
+                                subnpoints[sub2] = point
+                            else:
+                                subnpoints[sub2] = point
+
                         else:
-                            subnpoints[sub] = 2
+                            if sub in subnpoints:
+                                print("hey, wait a minute, "+sub+" is already accounted for")
+                        
+                            else:
+                                subnpoints[sub] = 2
 
                     print("below, are your subjects and OP seperated by a ':'.")
                     for subject, point in subnpoints.items():
@@ -87,7 +98,7 @@ while True:
     screen.fill((95,130,162))
     pygame.draw.rect(screen,"aliceblue",outputbackground)
     pygame.draw.rect(screen,"aquamarine",opback)
-    credits = font2.render("OP calc v1, made by Rui", True, "Black")
+    credits = font2.render("OP calc v1.1, made by Rui", True, "Black")
     screen.blit(credits,(10, height-30))
 
     if active == True:
@@ -98,6 +109,7 @@ while True:
         "fi:",
         "muista liittää wilman kurssitarjoittimen datan op.txt:n sisälle, ohjelma lukee sen automaattisesti.",
         "(op.txt tiedosto on oltava samassa kansiossa kuin tämä ohjelma."]
+
         why = 20
         for line in msg: #i hate pygame
             message = pygame.font.SysFont('Arial',20).render(line,True,"Black")
@@ -116,18 +128,30 @@ while True:
         clock.tick(60)
 
     if active == False:
-        blt = font2.render('below, are your subjects and OP seperated by a ":"',True,"black")
-        blt2 = font2.render('alhaallasi on opinnot ja opintopisteet erotettu ":" lla',True,"black")
+        pygame.draw.rect(screen,"azure1",opback)
+        pygame.draw.rect(screen,"aquamarine",opback, width=5)
+        blt = font2.render('below, are your subjects and OP seperated by a " : "',True,"black")
+        blt2 = font2.render('alhaallasi on opinnot ja opintopisteet erotettu " : " lla',True,"black")
         screen.blit(blt,(20,20))
-        screen.blit(blt2,(20,40))
-        y = 60
+        screen.blit(blt2,(20,37))
+
+        pygame.draw.rect(screen,(95,130,162),[10,60,850,3])
+
+        y = 66
+        y2 = 66
         for subject in gsubjects:
-            screen.blit(font2.render(subject,True,"black"),(20,y))
-            y += 14
+            if y > outputbackground[3]-20:
+                screen.blit(font2.render(subject,True,"black"),(250,y2))
+                y2 += 16
+            else:
+                screen.blit(font2.render(subject,True,"black"),(20,y))
+                y += 16
 
         screen.blit(total,(20,opback[1]+10))
-        
+        screen.blit(font2.render("You have: "+str(len(gsubjects))+" subjects.",True,"black"),(720,480))
         pygame.display.update()
         clock.tick(60)
-
-
+        
+        
+        
+        
