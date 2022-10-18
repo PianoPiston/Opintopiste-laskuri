@@ -46,8 +46,13 @@ with open(thefile, 'r') as wl:
     subjects = []
 
     for sub in dataf:
-        third = sub[2]
-        subjects.append(third)
+        if sub[0][3:8] == "jakso":
+            sub = sub[3]
+            print("found 'jakso' header in this subject: ",sub)
+            subjects.append(sub)
+        else:
+            third = sub[2]
+            subjects.append(third)
         
     if debugging == "y":
         print("these are the subjects that will be calculated:")
@@ -68,17 +73,21 @@ with open(thefile, 'r') as wl:
 
     for sub in subjects:
         if sub[-1] == ")":
+            sub2 = sub[:-6]
             num = sub[-5:]
-            sub = sub[:-5]
-            if debugging == "y":
-                print(sub,num)
             point = num[1]
-            subnpoints[sub] = point
-        elif sub in subnpoints:
-            if debugging == "y":
-                print("subject {} already in subjects".format(sub))
+            if sub2 in subnpoints:
+                print("CUSTOM SUB: "+sub+" HAS ALREADY BEEN ACCOUNTED FOR")
+                subnpoints[sub2] = point
+            else:
+                subnpoints[sub2] = point
+
         else:
-            subnpoints[sub] = 2
+            if sub in subnpoints:
+                print("hey, wait a minute, "+sub+" is already accounted for")
+        
+            else:
+                subnpoints[sub] = 2
 
     print("below, are your subjects and OP seperated by a ':'.")
     if debugging == "y":
